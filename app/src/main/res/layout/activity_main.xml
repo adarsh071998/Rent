@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to AAV "
+        android:id="@+id/et1"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Find Home App "
+        android:id="@+id/et2"
+        android:layout_below="@+id/et1"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        />
+
+
+    <EditText
+        android:id="@+id/user_name"
+        android:layout_width="250dp"
+        android:hint=" username..."
+        android:layout_height="45dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/et2"
+        android:layout_marginTop="40dp"
+        android:drawableLeft="@drawable/ic_user"
+
+        android:ems="10"
+        android:inputType="textPersonName"
+        />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:hint=" password.."
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/user_name"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:drawableLeft="@drawable/ic_pass"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text=" Login "
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="20dp" />
+
+
+    <Button
+        android:id="@+id/sign_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text=" Create new Account "
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="20dp" />
+
+
+</RelativeLayout>
